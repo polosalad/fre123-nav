@@ -33,6 +33,7 @@ services:
       - USERNAME=admin
       - PASSWORD=12345678
       - MONGODB_URI=mongodb://root:12345678@fre123-mongo:27017/admin
+      - MONGODB_DB=fre123
     networks:
       - fre123-network
   fre123-mongo:
