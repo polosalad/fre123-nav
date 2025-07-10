@@ -31,9 +31,9 @@ services:
       - "8765:8765"
     environment:
       - USERNAME=admin
-      - PASSWORD=12345678
-      - MONGODB_URI=mongodb://root:12345678@fre123-mongo:27017/admin
-      - MONGODB_DB=fre123
+      - PASSWORD=leaf1010
+      - MONGODB_URI=mongodb://root:leaf1010@fre123-mongo:27017/admin
+      - MONGODB_DB=leaf1010
     networks:
       - fre123-network
   fre123-mongo:
@@ -44,7 +44,7 @@ services:
       - 27077:27017
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASSWORD=12345678
+      - MONGO_INITDB_ROOT_PASSWORD=leaf1010
     volumes:
       - "/fre123/mongo_db_data:/data/db"
     networks:
